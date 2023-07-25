@@ -1,0 +1,15 @@
+<!--
+	Use ` | safe` to allow html tages within the text string.
+	https://mozilla.github.io/nunjucks/templating.html#autoescaping
+-->
+<div class="large">{{ config.title }}</div>
+<div class="flex-container" style="--min-height-container: {{ config.minHeightContainer }};">
+  {% if showImages %}
+    <div class="medium lefthalf">{{ config.text }}</div>
+    <div class="images righthalf">
+      <img class="normalized" src="{{ image }}" alt="image" />
+    </div>
+  {% else %}
+    <div class="medium fullwidth">{{ config.text }}</div>
+  {% endif %}
+</div>

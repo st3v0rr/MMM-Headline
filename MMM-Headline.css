@@ -1,0 +1,58 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  min-height: var(--min-height-container);
+}
+
+.normalized {
+  width: 50%;
+  height: auto;
+}
+
+.fullwidth {
+  text-align: justify;
+  width: 80%;
+  padding: 3rem;
+}
+
+.lefthalf {
+  text-align: justify;
+  width: 66%;
+  padding: 1rem;
+}
+
+.righthalf {
+  width: 34%;
+  padding: 1rem;
+}
+
+.images {
+  width: 50%;
+  height: auto;
+}
+
+.images img {
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
